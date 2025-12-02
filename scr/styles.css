@@ -1,0 +1,130 @@
+/* ===== Загальні стилі сторінки ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e3eefc, #f9fcff);
+    /* Ніжний градієнт для сучасного вигляду */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* ===== Контейнер калькулятора ===== */
+.calculator {
+    background: #ffffff;
+    padding: 30px;
+    width: 320px;
+
+    border-radius: 20px;
+
+    /* Неоморфічна тінь */
+    box-shadow:
+        8px 8px 20px rgba(0, 0, 0, 0.12),
+        -8px -8px 20px rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.calculator:hover {
+    /* Легкий ефект підняття */
+    transform: translateY(-3px);
+}
+
+
+/* ===== Заголовок ===== */
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+
+/* ===== Поля вводу ===== */
+.inputs input {
+    width: 120px;
+    padding: 10px;
+    margin: 6px;
+
+    border-radius: 12px;
+    border: none;
+
+    background: #f1f5f9;
+    font-size: 16px;
+    text-align: center;
+
+    box-shadow:
+        inset 3px 3px 6px rgba(0, 0, 0, 0.15),
+        inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+
+    transition: 0.2s;
+}
+
+.inputs input:focus {
+    outline: none;
+    background: #ffffff;
+    box-shadow:
+        inset 2px 2px 6px rgba(0, 0, 0, 0.2),
+        0px 0px 6px rgba(0, 123, 255, 0.4);
+}
+
+
+/* ===== Блок кнопок ===== */
+.buttons {
+    margin: 20px 0;
+}
+
+
+/* ===== Стиль кнопок ===== */
+button {
+    width: 50px;
+    height: 45px;
+    margin: 6px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #007bff;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    box-shadow:
+        3px 3px 8px rgba(0, 0, 0, 0.15),
+        -3px -3px 8px rgba(255, 255, 255, 0.9);
+}
+
+button:hover {
+    background: #005ec5;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* ===== Окремий стиль кнопки C (Reset) ===== */
+button.reset-btn {
+    background: #dc3545;   /* Червоний */
+}
+
+button.reset-btn:hover {
+    background: #b02a37;   /* Темніша версія */
+}
+
+
+/* ===== Результат ===== */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #1e293b;
+}
